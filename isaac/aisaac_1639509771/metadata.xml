@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+    <name>AIsaac</name>
+    <directory>aisaac</directory>
+    <id>1639509771</id>
+    <description>This mod adds a rudimentary AI to the game which can control players.
+	
+It's not a learning AI, all of its behaviour is hard coded, it knows to try and shoot enemies, not to touch dangerous things, pick up items, etc, but it will get smarter as it's updated
+
+You can adjust its behaviour by using the [u][b][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2681875787]Mod Config Menu[/url][/b][/u].
+
+You can set any of the 4 players to be controlled by the AI though player1 control is disabled by default, the mod also includes a challenge where the AI starts with some items and controls player1 (regardless of settings) just to see how far it can get or where/how it gets stuck.
+
+Works with the true co-op mod, it's better if it's controlling a flying character like the soul (check out my [u][b][url=https://steamcommunity.com/sharedfiles/filedetails/?id=1407712626]soul/forgotten co-op mod[/url][/b][/u] for that)
+
+
+If you're still on AB+ you will still have to have a controller plugged in and press start on it to add co-op characters to the run, this mod can't work around that unfortunately.
+
+Co-op babies are a bit limited in what they can do compared to the player, so some of the behaviour options are player1/true co-op/Repentance only.
+
+You can still control an AI character with your controller/keyboard (though they may fight back a bit) also the AI characters are given spectral and homing tears to help them out since they aren't amazing at aiming. (unless they get tractor beam)
+
+If you don't have the config menu mod you can still enable/disable the AI for specific players by opening console (~) and entering &quot;player1AI&quot; or &quot;player2AI&quot; or &quot;player3AI&quot; or &quot;player4AI&quot;.
+
+
+In REPENTANCE there is a debug console function for adding more characters without needing additional controllers. (addplayer X, where X is the players ID number)
+
+Though it does this weird thing where it assumes that the newly spawned character is 'player 1' with them taking over the HUD, so you won't be able to see the health/active item/pocket item of your actual character. (also if you quit and continue the game it might complain about a missing controller)
+
+
+This is included in [b][u][url=https://steamcommunity.com/sharedfiles/filedetails/?id=1846528445]POTATO PACK 3[/url][/u][/b].</description>
+    <version>1.26</version>
+    <visibility>Public</visibility>
+    <tag id="Lua"/>
+    <tag id="Player Characters"/>
+    <tag id="Babies"/>
+    <tag id="Challenges"/>
+    <tag id="Tweaks"/>
+</metadata>
