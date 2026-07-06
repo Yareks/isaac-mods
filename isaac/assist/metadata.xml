@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+    <name>Dodge Assist</name>
+    <directory>dodge_assist</directory>
+    <id>dodge_assist_id</id>
+    <description>Helps you dodge projectiles, enemies, lasers, fires, and spikes by temporarily overriding movement controls when danger is detected.</description>
+    <version>1.0</version>
+    <visibility>Public</visibility>
+</metadata>
