@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+    <name>[Rep] Enemy Bullet Trails</name>
+    <directory>bullettrails</directory>
+    <id>2949656747</id>
+    <description>This mod increases projectile/bullet visibility by giving them a pretty trail. It's extremely customizable through the &quot;Dead Sea Scrolls&quot; menu in game. Access it by pressing [C]!
+
+Note for non-REPENTOGON users: For the option that changes the color to be the color of the bullet (which is now the default), it won't work 100% of the time due to technical limitations. In these cases, it'll default to red. I've only found this to be noticeable on Mega Satan. With REPENOTOGON, this issue should not exist.
+
+/////
+
+Modders, this mod has an api!
+
+[code]
+--- Assign a custom trail color to a projectile sender.
+---@param entity integer @EntityType
+---@param variant integer
+---@param color Color | function @A Color object or a function that returns a Color object. The function is provided the entity. Don't use Color.Default, it's mutable and may cause issues.
+function BulletTrails:AddEntityTrailColor(entity, variant, color)
+[/code]
+
+/////
+
+[code]
+--- Blacklist the entity from having any projectile trails.
+--- If no variant is provided, all variants of the entity will be blacklisted. (Overwriting any previous variant blacklist)
+--- If no subType is provided, all subtypes of the variant of the entity will be blacklisted. (Overwriting any previous subtype blacklist)
+---@param bool boolean @Enable/disable
+---@param entity integer @EntityType
+---@param variant integer?
+---@param subType integer?
+function BulletTrails:BlacklistEntity(bool, entity, variant, subType)
+[/code]
+
+/////
+
+[code]
+--- Get a Color object using RGB values.
+---@param red number
+---@param green number
+---@param blue number
+function BulletTrails:RGBToColor(red, green, blue)
+[/code]
+
+/////
+
+Additionally, you can check if a trail is a trail from the mod by seeing if this is true:
+[code]trail:GetData().B_BulletTrail[/code]
+
+You can access the blacklist with:
+[code]BulletTrails.EntityTrailBlacklist[/code]
+
+You can access the entity projectile trail color table with:
+[code]BulletTrails.TypeToColors[/code]
+
+[b]Make sure you never use Color.Default as one of the colors! This is a mutable color and will have its transparency altered![/b]
+
+--
+
+Please leave feedback in the comments. Bug reports are expected to be detailed, with any errors (red text appearing in the developer console) included.
+Thanks to Luni on Discord for the idea to make this mod.</description>
+    <version>1.10</version>
+    <visibility>Public</visibility>
+    <tag id="Lua"/>
+    <tag id="Tweaks"/>
+    <tag id="Graphics"/>
+</metadata>
